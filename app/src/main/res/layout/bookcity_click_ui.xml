@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/back_btn_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/classify_back_btn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/iconfont_fanhui" />
+
+            <TextView
+                android:id="@+id/classify_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="小说"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/striping_color" />
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/store_house_ptr_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            cube_ptr:ptr_duration_to_close="300"
+            cube_ptr:ptr_duration_to_close_header="2000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.example.tai_fiction.tool.view.FlowLayout
+                        android:id="@+id/first_lable_fl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="12dp" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/striping_color" />
+
+
+                    <com.example.tai_fiction.tool.view.ListViewForScrollView
+                        android:id="@+id/classify_content_lv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    </LinearLayout>
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/bookcity_click_progressbar"-->
+        <!--style="@style/Base.TextAppearance.AppCompat.Large"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_marginLeft="160dp"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:layout_height="wrap_content" />-->
+</RelativeLayout>

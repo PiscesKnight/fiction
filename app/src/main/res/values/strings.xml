@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">TT小说</string>
+    <!-- navigation_header-->
+    <string name="pleaselogin">请登录</string>
+
+    <!-- login-->
+    <string name="ID_edit">邮箱/手机号</string>
+    <string name="pwd_edit">密码</string>
+    <string name="login_btn">登录</string>
+    <string name="forgetpwd_tv">忘记密码</string>
+    <string name="register_tv">免费注册</string>
+    <string name="login_user">登录账号</string>
+    
+    <!-- menu-->
+    <string name="myCollect">我的收藏</string>
+    <string name="myShare">我的分享</string>
+    <string name="Setting">设置</string>
+    <string name="exit">退出</string>
+
+    <!-- 标题栏-->
+    <string name="classify">分类</string>
+
+     <!-- 书籍详情bookdetails-->
+    <string name="startRead">开始阅读</string>
+    <string name="coolect">收藏</string>
+    <string name="share">分享</string>
+    <string name="look_catalog">查看目录</string>
+    <string name="category_lable">类别标签</string>
+    <string name="writer">作者</string>
+
+    <!-- 登录时用户输入判断-->
+<string name="register_name_digits">
+  ._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@
+</string>
+    
+    <!-- 个人资料user-->
+    <string name="personalData">个人资料</string>
+    <string name="nickName">昵称</string>
+    <string name="Email">邮箱</string>
+    <string name="Phone">手机</string>
+    <string name="Signature">签名</string>
+    <string name="changePassword">修改密码</string>
+    <string name="exitUser">退出账号</string>
+
+    <!-- 阅读器novleview-->
+    <string name="nextChapter">下一章</string>
+    <string name="lastChapter">上一章</string>
+</resources>

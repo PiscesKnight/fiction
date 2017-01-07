@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity_main-->
+    <item type="id" name="nv_main_navigation">抽屉导航</item>
+    <!--bookcity_fragment-->
+    <item type="id" name="bookcity_first_layout">第一个布局</item>
+    <item type="id" name="img_first">顶部图片</item>
+    <item type="id" name="classify_ly_btn">分类layout按钮</item>
+    <item type="id" name="complete_ly_btn">全本layout按钮</item>
+    <item type="id" name="bangdan_ly_btn">榜单layout按钮</item>
+</resources>

@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/iconfont_shoucang"
+            android:title="@string/myCollect"/>
+        <item
+            android:id="@+id/nav_home2"
+            android:icon="@mipmap/iconfont_fenxiang"
+            android:title="@string/myShare"/>
+        <item
+            android:id="@+id/nav_home3"
+            android:icon="@mipmap/iconfont_shezhi"
+            android:title="@string/Setting"/>
+        <item
+            android:id="@+id/nav_home4"
+            android:icon="@mipmap/iconfont_tuichu"
+            android:title="@string/exit"/>
+
+    </group>
+
+    <!--<item android:title="Vresion">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:title="Android"-->
+                <!--android:icon="@mipmap/abc"/>-->
+            <!--<item-->
+                <!--android:title="IOS"-->
+                <!--android:icon="@mipmap/abc"/>-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

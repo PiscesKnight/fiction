@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mycolor">#8B8989</color>小字体颜色
+    <color name="striping_color">#E3E3E3</color>横线颜色
+    <color name="btn_color">#00EE00</color>按钮颜色
+    <color name="blackcolor">#000000</color>
+
+    <!-- 阅读器-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menuColor">#000000</color>
+    <!-- 白天-->
+    <color name="daytimeReader">#CCE099</color>
+    <color name="daytimeFontColor">#000000</color>
+    <!-- 黑夜-->
+    <color name="nightRrader">#495A80</color>
+    <color name="nightFontColor">#E0FFFF</color>
+    <!-- 菜单字体颜色-->
+    <color name="menuFontColor">#FFFFFF</color>
+</resources>

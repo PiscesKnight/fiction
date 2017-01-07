@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--书名-->
+    <style name="BookNameFont">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">10dp</item>
+
+    </style>
+
+    <!--内容字体-->
+    <style name="ContentFont">
+        <item name="android:maxLines">4</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:maxWidth">250dp</item>
+    </style>
+
+    <!--页面顶部表题字体-->
+    <style name="TitleFont">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--书架菜单动画 -->
+    <style name="bookrack_menu_anim_style">
+        <item name="android:windowEnterAnimation">@anim/bottompopshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/bottompophidden_anim</item>
+    </style>
+
+    <!-- 阅读器-->
+    <!--  这个是加入的代码 -->
+    <style name="buttompopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/ppw_bottom_show_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/ppw_bottom_hidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <style name="toppopwindow_anim_style">
+
+        <item name="android:windowEnterAnimation">@anim/ppw_top_show_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/ppw_top_hidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+</resources>

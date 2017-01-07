@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/bookdetails_back_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:background="@mipmap/iconfont_fanhui" />
+
+        <TextView
+            android:id="@+id/bookdetails_title_tv"
+            style="@style/TitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遮天" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/mycolor" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bookdetails_store_house_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- 头部分-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clipToPadding="false"
+                    android:dividerHeight="5dp">
+
+                    <ImageView
+                        android:id="@+id/bookcity_content_iv"
+                        android:layout_width="125dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/abv123456" />
+
+                    <TextView
+                        android:id="@+id/bookdetails_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_toRightOf="@id/bookcity_content_iv"
+                        android:text="遮天"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bookdetails_authors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="85dp"
+                        android:layout_toRightOf="@id/bookcity_content_iv"
+                        android:text="天蚕土豆"
+                        android:textColor="#66CDAA" />
+
+                    <Button
+                        android:id="@+id/bookdetails_startread_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="115dp"
+                        android:layout_toRightOf="@id/bookcity_content_iv"
+                        android:background="@drawable/bookdetails_readbtn"
+                        android:onClick="onClick"
+                        android:text="@string/startRead"
+                        android:textColor="#FFFFFF" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#E3E3E3" />
+
+                <!-- 内容简介-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bookcitydetails_collect_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="1"
+                            android:background="@drawable/bookdetails_btn"
+                            android:onClick="onClick"
+                            android:text="@string/coolect" />
+
+                        <Button
+                            android:id="@+id/bookdetails_share_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="1"
+                            android:background="@drawable/bookdetails_btn_shape"
+                            android:onClick="onClick"
+                            android:text="@string/share" />
+
+                        <Button
+                            android:id="@+id/bookdetails_addbook_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10px"
+                            android:layout_weight="1"
+                            android:background="@drawable/bookdetails_btn"
+                            android:onClick="onClick"
+                            android:text="加入书架" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bookdetails_content_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="7"
+                        android:onClick="onClick"
+                        android:text="冰冷与黑暗并存的宇宙深处，九具庞大的龙尸拉着一口青铜古棺，亘古长存。这是太空探测器在枯寂的宇宙中捕捉到的一幅极其震撼的画面。 九龙拉棺，究竟是回到了上古，还是来到了星空的彼岸？一个浩大的仙侠世界，光怪6离，神秘无尽。热血似火山沸腾，激情若瀚海汹涌，欲望如深渊无止境…… 登天路，踏歌行，弹指遮天。"
+                        android:textSize="15sp" />
+                    <!--android:ellipsize="end"  内容太长显示不下会用...代替-->
+
+
+                    <ImageView
+                        android:id="@+id/arrows_a_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/iconfont_tarrowdown" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#E3E3E3" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/writer"
+                        android:textColor="#919191"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bookdetails_writerIntro_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.19"
+                        android:ellipsize="end"
+                        android:maxLines="5"
+                        android:onClick="onClick"
+                        android:text="天蚕土豆（1989年12月28日— ），真名叫李虎，起点小说网白金写手，新生代网络写手代表人物，2008年凭借处女作《魔兽剑圣异界纵横》一举折桂新人王，跻身人气顶尖网络写手之列，2009年创作的《斗破苍穹》更是获得在起点中文网高达1亿四千多万的点击率，也因此奠定了在网络原创界难以动摇的人气顶级写手地位，2013年的新作品《大主宰》已在起点连载，深受读者的喜爱。2014年，担任浙江省网络作家协会副主席。并在12月17日发布的2014第九届中国作家榜“网络作家榜”上，以2550万版税成为季军。" />
+
+                    <ImageView
+                        android:id="@+id/arrows_b_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:onClick="onClick"
+                        android:src="@mipmap/iconfont_tarrowdown" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#E3E3E3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/category_lable"
+                        android:textColor="#919191"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/lable_btn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bookdetails_label1_style"
+                            android:text="小说" />
+
+                        <Button
+                            android:id="@+id/lable_btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bookdetails_label2_style"
+                            android:text="小说" />
+
+                        <Button
+                            android:id="@+id/lable_btn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/bookdetails_label3_style"
+                            android:text="小说" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

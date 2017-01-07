@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="#FFE4B5"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.tai_fiction.tool.view.CircleImageView
+            android:id="@+id/userInfo_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="onClick"
+            android:src="@mipmap/lufei" />
+
+
+        <TextView
+            android:id="@+id/nv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/pleaselogin"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/nv_header_login_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/nv_header_loginbtn_shape"
+            android:onClick="onClick"
+            android:text="@string/login_btn"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/introduce_myself_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity=""
+            android:text="        本人性格乐观开朗，喜欢交友聊天，唱歌画画，敲敲代码看看书，最喜欢逼格高的东西！"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

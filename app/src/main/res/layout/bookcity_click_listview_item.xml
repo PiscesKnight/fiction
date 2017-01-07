@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/recommend_ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/recommend_cover_iv"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/recommend_ry"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toEndOf="@+id/recommend_ry"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/recommend_title_text"
+            style="@style/BookNameFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_alignTop="@+id/recommend_ry"
+            android:text="题目"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recommend_content_text"
+            style="@style/ContentFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88"
+            android:text="内容"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/recommend_write_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="作者"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

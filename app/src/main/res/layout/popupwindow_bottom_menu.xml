@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:background="@color/menuColor"
+    >
+
+    <!-- 上半部-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lastChapter"
+            android:textColor="@color/menuFontColor"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/nextChapter"
+            android:textColor="@color/menuFontColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF" />
+    <!-- 下半部-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="65dp"
+        android:stretchColumns="0,1,2,3">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <ImageView
+                android:id="@+id/set_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:src="@mipmap/iconfont_zitidaxiao"
+                android:layout_column="0"/>
+            <ImageView
+                android:id="@+id/luminance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/iconfont_liangdu"
+                android:layout_column="1"/>
+            <ImageView
+                android:id="@+id/directory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/iconfont_mulu"
+                android:layout_column="2"/>
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/iconfon_gengduo"
+                android:layout_column="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_column="0"
+         >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@color/menuFontColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="亮度"
+                android:textColor="@color/menuFontColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="目录"
+                android:textColor="@color/menuFontColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@color/menuFontColor"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

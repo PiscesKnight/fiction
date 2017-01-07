@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/login_back_btn_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/login_back_iv"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/iconfont_fanhui"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="@string/login_user"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/striping_color"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/user_edit"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:digits="@string/register_name_digits"
+            android:background="@drawable/userid_edit_shape"
+            android:hint="@string/ID_edit"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/pwd_edit_shape"
+            >
+
+            <EditText
+                android:id="@+id/login_pwd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pwd_edit"
+                android:padding="3dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                />
+            <ImageButton
+                android:id="@+id/pwd_visible_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="onClick"
+                android:background="@mipmap/iconfont_weichakan"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/login_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_tv"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetpwd_tv"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_btn"
+            android:onClick="onClick"
+            android:background="@drawable/loginbtn"
+            />
+
+    </LinearLayout>
+</LinearLayout>
