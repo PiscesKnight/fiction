@@ -16,7 +16,7 @@ import com.example.tai_fiction.R;
 
 import com.example.tai_fiction.adapter.BookRackAdapter;
 import com.example.tai_fiction.base.mvp.MvpFragment;
-import com.example.tai_fiction.novelview.NovelViewActivity;
+import com.example.tai_fiction.ui.novelview.NovelViewActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

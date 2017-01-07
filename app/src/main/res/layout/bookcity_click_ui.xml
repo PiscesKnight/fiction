@@ -39,6 +39,33 @@
             android:layout_height="3dp"
             android:background="@color/striping_color" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.example.tai_fiction.tool.view.FlowLayout
+                android:id="@+id/first_lable_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/striping_color" />
+        <!--</LinearLayout>-->
+        <!--<com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView-->
+            <!--android:id="@+id/pullLoadMoreRecyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+          <!---->
+        <!--</com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>-->
+        </LinearLayout>
         <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
             android:id="@+id/store_house_ptr_frame"
             android:layout_width="match_parent"
@@ -54,34 +81,10 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-
-                    <com.example.tai_fiction.tool.view.FlowLayout
-                        android:id="@+id/first_lable_fl"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="12dp"
-                        android:paddingLeft="12dp"
-                        android:paddingTop="12dp" />
-
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="8dp"
-                        android:background="@color/striping_color" />
-
-
-                    <com.example.tai_fiction.tool.view.ListViewForScrollView
-                        android:id="@+id/classify_content_lv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
+                <com.example.tai_fiction.tool.view.ListViewForScrollView
+                    android:id="@+id/classify_content_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </ScrollView>
 
         </in.srain.cube.views.ptr.PtrClassicFrameLayout>

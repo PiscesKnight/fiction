@@ -3,30 +3,22 @@ package com.example.tai_fiction.ui.fragment.bookcity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.example.tai_fiction.R;
-import com.example.tai_fiction.activity.BookcityClickActivity;
+import com.example.tai_fiction.ui.activity.BooksList.BooksListActivity;
 import com.example.tai_fiction.adapter.BookcityAdapter;
 import com.example.tai_fiction.base.mvp.MvpFragment;
 import com.example.tai_fiction.entity.IndexLablesEntity;
-import com.example.tai_fiction.tool.OkHttpClientManager;
 import com.example.tai_fiction.tool.PhoneStateUtil;
-import com.squareup.okhttp.Request;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import in.srain.cube.views.ptr.PtrClassicFrameLayout;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
@@ -115,7 +107,7 @@ public class BookCityFragment extends MvpFragment<BookCityPresenter> implements 
                                 sid = bookCity.get(position).getSid();
                                 itemsBeans = bookCity.get(position).getItems();
 
-                                Intent intent = new Intent(getActivity(), BookcityClickActivity.class);
+                                Intent intent = new Intent(getActivity(), BooksListActivity.class);
                                 Bundle bundle = new Bundle();
                                 bundle.putParcelableArrayList(PAR_KEY, (ArrayList<? extends Parcelable>) itemsBeans);
                                 intent.putExtra("lable_data", lable);

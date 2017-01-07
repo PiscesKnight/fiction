@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tai_fiction.novelview.NovelViewActivity">
+    tools:context=".ui.novelview.NovelViewActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <com.example.tai_fiction.novelview.NovelView
+    <com.example.tai_fiction.ui.novelview.NovelView
         android:id="@+id/novelView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

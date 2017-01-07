@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".ui.activity.Main.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,12 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.BookcityClickActivity"/>
-        <activity android:name=".activity.LoginActivity"/>
-        <activity android:name=".activity.BookDetailsActivity"/>
-        <activity android:name=".activity.UserActivity"/>
-        <activity android:name=".novelview.NovelViewActivity"/>
-        <activity android:name=".activity.MycollectActivity"/>
+        <activity android:name=".ui.activity.BooksList.BooksListActivity"/>
+        <activity android:name=".ui.activity.LoginActivity"/>
+        <activity android:name=".ui.activity.BookDetailsActivity"/>
+        <activity android:name=".ui.activity.UserActivity"/>
+        <activity android:name=".ui.novelview.NovelViewActivity"/>
+        <activity android:name=".ui.activity.MycollectActivity"/>
         <activity
             android:name="com.mob.tools.MobUIShell"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"

@@ -12,7 +12,7 @@ import com.example.tai_fiction.base.BasePresenter;
 
 public abstract class MvpActivity<P extends BasePresenter> extends BaseActivity {
 
-    private P mPresenter;
+    public P mPresenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
