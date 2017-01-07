@@ -28,12 +28,12 @@
             android:verticalSpacing="2dp" />
     </in.srain.cube.views.ptr.PtrClassicFrameLayout>
 
-    <ProgressBar
-        android:id="@+id/bookcity_progressbar"
-        style="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+    <!--<ProgressBar-->
+        <!--android:id="@+id/bookcity_progressbar"-->
+        <!--style="@style/Base.TextAppearance.AppCompat.Large"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true" />-->
 
 </RelativeLayout>

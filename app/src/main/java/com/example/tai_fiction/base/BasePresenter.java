@@ -1,5 +1,7 @@
 package com.example.tai_fiction.base;
 
+import android.view.View;
+
 import com.example.tai_fiction.api.ApiStores;
 import com.example.tai_fiction.api.AppClient;
 
@@ -8,6 +10,8 @@ import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
+
+import static com.example.tai_fiction.R.styleable.View;
 
 /**
  * Created by JinBao on 2017/1/7.
@@ -18,6 +22,10 @@ public class BasePresenter<V> {
     public V mvpView;
     protected ApiStores apiStores;
     private CompositeSubscription mCompositeSubscription;
+
+    public BasePresenter(V mvpView){
+        attachView(mvpView);
+    }
 
     public void attachView(V mvpView) {
         this.mvpView = mvpView;

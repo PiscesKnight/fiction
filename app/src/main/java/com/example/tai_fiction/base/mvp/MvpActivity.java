@@ -37,4 +37,5 @@ public abstract class MvpActivity<P extends BasePresenter> extends BaseActivity 
             mPresenter.detachView();
         }
     }
+
 }

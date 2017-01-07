@@ -8,8 +8,8 @@ import com.example.tai_fiction.base.BasePresenter;
 
 public class MainPresenter extends BasePresenter<MainView> {
 
-    public MainPresenter(MainView view){
-        attachView(view);
-    }
 
+    public MainPresenter(MainView mvpView) {
+        super(mvpView);
+    }
 }
