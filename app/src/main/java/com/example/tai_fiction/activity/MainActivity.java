@@ -3,31 +3,25 @@ package com.example.tai_fiction.activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
-import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.tai_fiction.R;
 import com.example.tai_fiction.adapter.FragmentAdapter;
 import com.example.tai_fiction.base.mvp.MvpActivity;
 import com.example.tai_fiction.tool.view.CircleImageView;
-import com.example.tai_fiction.ui.fragment.BookRackFragment;
 import com.example.tai_fiction.ui.fragment.bookcity.BookCityFragment;
+import com.example.tai_fiction.ui.fragment.bookrack.BookRackFragment;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
@@ -146,61 +140,6 @@ public class MainActivity extends MvpActivity<MainPresenter> implements MainView
         viewPager.setAdapter(adapter);
 
     }
-
-//    @Override
-//    public void onClick(View v) {
-//        switch (v.getId()) {
-//            case R.id.nv_header_login_btn:
-//                intent = new Intent(MainActivity.this, LoginActivity.class);
-//                startActivityForResult(intent, 1);
-//                break;
-//            case R.id.user_btn://用户菜单
-//                mDrawerLayout.openDrawer(Gravity.START);
-//                break;
-//            case R.id.userInfo_iv://个人资料
-//                if (userName.getText().toString().equals(getString(R.string.pleaselogin))) {
-//                    intent = new Intent(MainActivity.this, LoginActivity.class);
-//                    startActivityForResult(intent, 1);
-//                } else {
-//                    intent = new Intent(MainActivity.this, UserActivity.class);
-//                    intent.putExtra("extra_data", returnData);
-//                    startActivityForResult(intent, 2);
-//                }
-//
-//                break;
-//        }
-//    }
-
-//    @Override
-//    public boolean onKeyDown(int keyCode, KeyEvent event) {
-//        if (keyCode == KeyEvent.KEYCODE_BACK) {
-//            exit();
-//            return false;
-//        }
-//        return super.onKeyDown(keyCode, event);
-//    }
-//
-//    Handler mHandler = new Handler() {
-//
-//        @Override
-//        public void handleMessage(Message msg) {
-//            super.handleMessage(msg);
-//            isExit = false;
-//        }
-//    };
-//
-//    private void exit() {
-//        if (!isExit) {
-//            isExit = true;
-//            Toast.makeText(getApplicationContext(), "再按一次退出程序",
-//                    Toast.LENGTH_SHORT).show();
-//            // 利用handler延迟发送更改状态信息
-//            mHandler.sendEmptyMessageDelayed(0, 2000);
-//        } else {
-//            finish();
-//            System.exit(0);
-//        }
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
