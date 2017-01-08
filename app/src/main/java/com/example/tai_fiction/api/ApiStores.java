@@ -34,4 +34,8 @@ public interface ApiStores {
     //加载标签的图书列表
     @GET("store/v0/android/category/{categoryid}?start=0&count=10")
     Observable<BookIntroEntity> loadLableBooksData(@Path("categoryid") String categoryid);
+
+    //获取数据内容
+    @GET("http://www.duokan.com/hs/v0/android/store/book/{bookId}")
+    Observable<BookDetailsEntity> getBookdetailsData(@Path("bookId") String bookId);
 }

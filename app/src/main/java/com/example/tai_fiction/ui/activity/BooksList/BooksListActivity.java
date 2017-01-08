@@ -1,4 +1,4 @@
-package com.example.tai_fiction.ui.activity.BooksList;
+package com.example.tai_fiction.ui.activity.booksList;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,24 +9,18 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.tai_fiction.R;
 import com.example.tai_fiction.adapter.SecondpageAdapter;
 import com.example.tai_fiction.base.mvp.MvpActivity;
 import com.example.tai_fiction.entity.BookIntroEntity;
 import com.example.tai_fiction.entity.IndexLablesEntity;
-import com.example.tai_fiction.tool.OkHttpClientManager;
-import com.example.tai_fiction.tool.PhoneStateUtil;
 import com.example.tai_fiction.tool.view.FlowLayout;
 import com.example.tai_fiction.tool.view.ListViewForScrollView;
-import com.example.tai_fiction.ui.activity.BookDetailsActivity;
+import com.example.tai_fiction.ui.activity.bookdetails.BookDetailsActivity;
 import com.example.tai_fiction.ui.fragment.bookcity.BookCityFragment;
-import com.squareup.okhttp.Request;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;

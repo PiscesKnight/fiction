@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.example.tai_fiction.R;
-import com.example.tai_fiction.ui.activity.BooksList.BooksListActivity;
+import com.example.tai_fiction.ui.activity.booksList.BooksListActivity;
 import com.example.tai_fiction.adapter.BookcityAdapter;
 import com.example.tai_fiction.base.mvp.MvpFragment;
 import com.example.tai_fiction.entity.IndexLablesEntity;
@@ -36,8 +36,8 @@ public class BookCityFragment extends MvpFragment<BookCityPresenter> implements 
 //    ProgressBar progressBar;
 
 
-    private String URL = "http://www.duokan.com/hs/v0/android/store/category";
-    private List<IndexLablesEntity.BookBean> booksData;
+   // private String URL = "http://www.duokan.com/hs/v0/android/store/category";
+  //  private List<IndexLablesEntity.BookBean> booksData;
     private List<IndexLablesEntity.BookBean.ItemsBean> itemsBeans;
 
     public final static String PAR_KEY = "com.tutor.objecttran.par";

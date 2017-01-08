@@ -1,4 +1,4 @@
-package com.example.tai_fiction.ui.activity.BooksList;
+package com.example.tai_fiction.ui.activity.booksList;
 
 import com.example.tai_fiction.base.BaseView;
 import com.example.tai_fiction.entity.BookIntroEntity;

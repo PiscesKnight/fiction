@@ -1,4 +1,4 @@
-package com.example.tai_fiction.ui.activity.Main;
+package com.example.tai_fiction.ui.activity.main;
 
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.ViewPager;

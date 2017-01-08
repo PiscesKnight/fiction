@@ -1,4 +1,4 @@
-package com.example.tai_fiction.ui.activity.Main;
+package com.example.tai_fiction.ui.activity.main;
 
 import com.example.tai_fiction.base.BasePresenter;
 

@@ -80,12 +80,12 @@
         "source": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\exploded-aar\\tai_fiction\\shareSDK\\unspecified\\res\\drawable-xhdpi-v4\\ssdk_auth_title_back.png"
     },
     {
-        "merged": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_back_arr.png",
-        "source": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\exploded-aar\\tai_fiction\\shareSDK\\unspecified\\res\\drawable-xhdpi-v4\\ssdk_back_arr.png"
-    },
-    {
         "merged": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_mingdao.png",
         "source": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_mingdao.png"
+    },
+    {
+        "merged": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_back_arr.png",
+        "source": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\exploded-aar\\tai_fiction\\shareSDK\\unspecified\\res\\drawable-xhdpi-v4\\ssdk_back_arr.png"
     },
     {
         "merged": "F:\\LJT\\Android\\MVPProject\\tai_fiction\\oneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_email.png",

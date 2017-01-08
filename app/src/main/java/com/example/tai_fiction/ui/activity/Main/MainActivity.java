@@ -1,4 +1,4 @@
-package com.example.tai_fiction.ui.activity.Main;
+package com.example.tai_fiction.ui.activity.main;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -19,7 +19,7 @@ import com.example.tai_fiction.adapter.FragmentAdapter;
 import com.example.tai_fiction.base.mvp.MvpActivity;
 import com.example.tai_fiction.tool.view.CircleImageView;
 import com.example.tai_fiction.ui.activity.LoginActivity;
-import com.example.tai_fiction.ui.activity.MycollectActivity;
+import com.example.tai_fiction.ui.activity.mycollect.MycollectActivity;
 import com.example.tai_fiction.ui.activity.UserActivity;
 import com.example.tai_fiction.ui.fragment.bookcity.BookCityFragment;
 import com.example.tai_fiction.ui.fragment.bookrack.BookRackFragment;

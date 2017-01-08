@@ -1,4 +1,4 @@
-package com.example.tai_fiction.ui.activity.BooksList;
+package com.example.tai_fiction.ui.activity.booksList;
 
 import android.content.Context;
 
