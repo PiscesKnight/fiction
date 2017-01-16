@@ -1,7 +1,6 @@
 package com.example.tai_fiction.ui.activity.bookdetails;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -13,19 +12,16 @@ import android.widget.Toast;
 import com.example.tai_fiction.R;
 import com.example.tai_fiction.base.mvp.MvpActivity;
 import com.example.tai_fiction.entity.BookDetailsEntity;
-import com.example.tai_fiction.tool.OkHttpClientManager;
 import com.example.tai_fiction.tool.PhoneStateUtil;
 import com.example.tai_fiction.ui.novelview.NovelViewActivity;
-import com.squareup.okhttp.Request;
 import com.squareup.picasso.Picasso;
+import com.umeng.socialize.ShareAction;
+import com.umeng.socialize.UMShareListener;
+import com.umeng.socialize.bean.SHARE_MEDIA;
 
 import java.util.List;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import cn.sharesdk.framework.ShareSDK;
-import cn.sharesdk.onekeyshare.OnekeyShare;
 import in.srain.cube.views.ptr.PtrClassicFrameLayout;
 import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
@@ -177,24 +173,27 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
                 }
                 break;
             case R.id.bookdetails_share_btn://分享按钮
-//                share = new ShareUtils(this);
-//                share.SendBinaryImageToWX(this);
 
-                if (phoneStateUtil.isNetworkAvailable(this)) {
-                    OnekeyShare oks = new OnekeyShare();
-                    //关闭sso授权
-                    oks.disableSSOWhenAuthorize();
-                    oks.setImageUrl(itemBean.getCover().toString());
-                    // text是分享文本，所有平台都需要这个字段
-                    oks.setTitle(itemBean.getTitle().toString());
-                    oks.setText(itemBean.getContent().toString());
-                    // url仅在微信（包括好友和朋友圈）中使用
-                    oks.setUrl(itemBean.getCover().toString());
-                    // 启动分享GUI
-                    oks.show(this);
-                } else {
-                    Toast.makeText(this, "分享失败！请检查你的网络！", Toast.LENGTH_SHORT).show();
-                }
+                UMShareListener umShareListener = new UMShareListener() {
+                    @Override
+                    public void onResult(SHARE_MEDIA share_media) {
+                        showShortToast("成功了");
+                    }
+
+                    @Override
+                    public void onError(SHARE_MEDIA share_media, Throwable throwable) {
+                        showShortToast("发生错误");
+                    }
+
+                    @Override
+                    public void onCancel(SHARE_MEDIA share_media) {
+                        showShortToast("取消了");
+                    }
+                };
+                new ShareAction(BookDetailsActivity.this).setPlatform(SHARE_MEDIA.WEIXIN)
+                        .withText("hello")
+                        .setCallback(umShareListener)
+                        .share();
                 break;
             case R.id.bookdetails_addbook_btn:
                 isSuccessful = mPresenter.getBookDB().addBookRack(itemBean);//判断数据库有没有相同的数据（被收藏过）
@@ -233,11 +232,6 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
         }
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        ShareSDK.stopSDK(this);
-    }
 
     @Override
     public void getDataSuccess(BookDetailsEntity model) {

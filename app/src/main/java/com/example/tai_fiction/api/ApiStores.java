@@ -3,7 +3,6 @@ package com.example.tai_fiction.api;
 import com.example.tai_fiction.entity.BookDetailsEntity;
 import com.example.tai_fiction.entity.BookIntroEntity;
 import com.example.tai_fiction.entity.IndexLablesEntity;
-import com.squareup.okhttp.Call;
 
 
 import retrofit2.http.GET;
@@ -38,4 +37,6 @@ public interface ApiStores {
     //获取数据内容
     @GET("http://www.duokan.com/hs/v0/android/store/book/{bookId}")
     Observable<BookDetailsEntity> getBookdetailsData(@Path("bookId") String bookId);
+
+
 }
