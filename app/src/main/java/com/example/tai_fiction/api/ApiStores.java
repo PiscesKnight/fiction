@@ -37,6 +37,4 @@ public interface ApiStores {
     //获取数据内容
     @GET("http://www.duokan.com/hs/v0/android/store/book/{bookId}")
     Observable<BookDetailsEntity> getBookdetailsData(@Path("bookId") String bookId);
-
-
 }

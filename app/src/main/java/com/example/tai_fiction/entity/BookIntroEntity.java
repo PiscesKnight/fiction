@@ -105,7 +105,7 @@ public class BookIntroEntity {
     }
 
     public static class ItemsBean {
-        private int ad;
+        private boolean ad;
         private double new_price;
         private String platforms;
         private int ad_time;
@@ -132,11 +132,11 @@ public class BookIntroEntity {
         private String book_id;
         private int limited_time;
 
-        public int getAd() {
+        public boolean getAd() {
             return ad;
         }
 
-        public void setAd(int ad) {
+        public void setAd(boolean ad) {
             this.ad = ad;
         }
 

@@ -54,10 +54,8 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
     TextView introText;//书籍简介
     @Bind(R.id.arrows_a_iv)
     ImageView arrowsAIv;//下箭头
-    @Bind(R.id.bookdetails_writerIntro_tv)
-    TextView writerIntroText;//作者简介
-    @Bind(R.id.arrows_b_iv)
-    ImageView arrowsBIv;//下箭头
+
+
     @Bind(R.id.lable_btn1)
     Button lableBtn1;//类别标签
     @Bind(R.id.lable_btn2)
@@ -97,11 +95,7 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
 
         mPresenter.getBookDetalisData(bookId);
 
-        if (writerIntroText.getLineCount() < 5) {
-            arrowsBIv.setVisibility(View.GONE);
-        } else {
-            arrowsBIv.setVisibility(View.VISIBLE);
-        }
+
         if (introText.getLineCount() < 7) {
             arrowsAIv.setVisibility(View.GONE);
         } else {
@@ -146,19 +140,6 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
                     introText.setMaxLines(7);
                     isClick = true;
                     arrowsAIv.setVisibility(View.VISIBLE);
-                }
-                break;
-            case R.id.bookdetails_writerIntro_tv://作者信息
-                if (isClick) {
-                    writerIntroText.setEllipsize(TextUtils.TruncateAt.START);
-                    writerIntroText.setMaxLines(100);
-                    isClick = false;
-                    arrowsBIv.setVisibility(View.GONE);
-                } else {
-                    writerIntroText.setEllipsize(TextUtils.TruncateAt.END);
-                    writerIntroText.setMaxLines(5);
-                    isClick = true;
-                    arrowsBIv.setVisibility(View.VISIBLE);
                 }
                 break;
             case R.id.bookdetails_back_ly://返回键
@@ -240,12 +221,13 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
         titleTv.setText(itemBean.getTitle());
         titleTopTv.setText(itemBean.getTitle());
         String cover = itemBean.getCover();
+        String newCover = cover.substring(0,cover.length()-2);
         authorsTv.setText(itemBean.getAuthors());
         introText.setText(itemBean.getContent());
-        writerIntroText.setText(itemBean.getAuthor_detail().get(0).getIntroduction());
+//        writerIntroText.setText(itemBean.getAuthor_detail().get(1).getIntroduction());
 
         Picasso.with(BookDetailsActivity.this)
-                .load(cover)
+                .load(newCover)
                 .placeholder(R.mipmap.abv123456)
                 .error(R.mipmap.abv123456)
                 .centerCrop()
@@ -254,9 +236,9 @@ public class BookDetailsActivity extends MvpActivity<BookDetailsPresenter> imple
 
         List<String> tags = itemBean.getTags();//取得类别标签
 
-        lableBtn1.setText(tags.get(tags.size() - 1).toString());
-        lableBtn2.setText(tags.get(0).toString());
-        lableBtn3.setText(tags.get(1).toString());
+        lableBtn1.setText(tags.get(0));
+        lableBtn2.setText(tags.get(1));
+        lableBtn3.setText(tags.get(2));
 
         frameLayout.refreshComplete();
     }

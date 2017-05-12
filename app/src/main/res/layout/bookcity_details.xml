@@ -180,40 +180,40 @@
                         android:background="#E3E3E3" />
 
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/writer"
-                        android:textColor="#919191"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="@string/writer"-->
+                        <!--android:textColor="#919191"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:textStyle="bold" />-->
 
-                    <TextView
-                        android:id="@+id/bookdetails_writerIntro_tv"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:layout_weight="0.19"
-                        android:ellipsize="end"
-                        android:maxLines="5"
-                        android:onClick="onClick"
-                        android:text="天蚕土豆（1989年12月28日— ），真名叫李虎，起点小说网白金写手，新生代网络写手代表人物，2008年凭借处女作《魔兽剑圣异界纵横》一举折桂新人王，跻身人气顶尖网络写手之列，2009年创作的《斗破苍穹》更是获得在起点中文网高达1亿四千多万的点击率，也因此奠定了在网络原创界难以动摇的人气顶级写手地位，2013年的新作品《大主宰》已在起点连载，深受读者的喜爱。2014年，担任浙江省网络作家协会副主席。并在12月17日发布的2014第九届中国作家榜“网络作家榜”上，以2550万版税成为季军。" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/bookdetails_writerIntro_tv"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:layout_weight="0.19"-->
+                        <!--android:ellipsize="end"-->
+                        <!--android:maxLines="5"-->
+                        <!--android:onClick="onClick"-->
+                        <!--android:text="天蚕土豆（1989年12月28日— ），真名叫李虎，起点小说网白金写手，新生代网络写手代表人物，2008年凭借处女作《魔兽剑圣异界纵横》一举折桂新人王，跻身人气顶尖网络写手之列，2009年创作的《斗破苍穹》更是获得在起点中文网高达1亿四千多万的点击率，也因此奠定了在网络原创界难以动摇的人气顶级写手地位，2013年的新作品《大主宰》已在起点连载，深受读者的喜爱。2014年，担任浙江省网络作家协会副主席。并在12月17日发布的2014第九届中国作家榜“网络作家榜”上，以2550万版税成为季军。" />-->
 
-                    <ImageView
-                        android:id="@+id/arrows_b_iv"
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:onClick="onClick"
-                        android:src="@mipmap/iconfont_tarrowdown" />
+                    <!--<ImageView-->
+                        <!--android:id="@+id/arrows_b_iv"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:onClick="onClick"-->
+                        <!--android:src="@mipmap/iconfont_tarrowdown" />-->
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp"
-                        android:layout_marginTop="5dp"
-                        android:background="#E3E3E3" />
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="10dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:background="#E3E3E3" />-->
 
                     <TextView
                         android:layout_width="match_parent"
@@ -255,10 +255,7 @@
                             android:background="@drawable/bookdetails_label3_style"
                             android:text="小说" />
                     </LinearLayout>
-
-
                 </LinearLayout>
-
             </LinearLayout>
         </ScrollView>
     </in.srain.cube.views.ptr.PtrClassicFrameLayout>

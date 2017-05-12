@@ -200,7 +200,7 @@ public class BooksListActivity extends MvpActivity<BooksListPresenter> implement
 
     @Override
     public void onFailure(String msg) {
-        showShortToast("你的网络吃屎啊！");
+        showShortToast("请检查网络");
     }
 
     /**

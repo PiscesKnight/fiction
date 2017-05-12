@@ -15,7 +15,7 @@ public class BookCityPresenter extends BasePresenter<BookCityView> {
     }
 
     public void loadBookCityData(){
-        mvpView.showLoading();
+//        mvpView.showLoading();
         addSubscription(apiStores.loadBookCityData(),
                 new ApiCallback<IndexLablesEntity>() {
                     @Override

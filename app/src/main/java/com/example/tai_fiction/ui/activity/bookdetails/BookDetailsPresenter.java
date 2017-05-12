@@ -10,6 +10,8 @@ import com.example.tai_fiction.entity.BookIntroEntity;
 
 import java.util.HashMap;
 
+import rx.Subscriber;
+
 /**
  * Created by JinBao on 2017/1/8.
  */

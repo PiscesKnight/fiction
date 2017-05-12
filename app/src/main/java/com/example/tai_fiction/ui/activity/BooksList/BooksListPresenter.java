@@ -30,7 +30,7 @@ public class BooksListPresenter extends BasePresenter<BooksListView> {
 
     //加载图书列表数据
     public void loadBooksListData(int sid){
-        mvpView.showLoading();
+      //  mvpView.showLoading();
         addSubscription(apiStores.loadBooksListData(sid),
                 new ApiCallback<BookIntroEntity>() {
                     @Override
