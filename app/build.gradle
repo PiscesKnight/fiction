@@ -48,20 +48,12 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile files('libs/libammsdk.jar')
-    //    compile files('libs/volley.jar')
-    //    compile files('libs/httpclient-4.5.jar')
-    //    compile files('libs/httpcore-4.4.1.jar')
-    //    compile files('libs/httpclient-win-4.5.jar')
     compile 'com.squareup.okio:okio:1.7.0'
     compile 'com.google.code.gson:gson:2.6.2'
-    //    compile 'com.squareup.okhttp:okhttp:2.4.0'
     compile 'com.squareup.picasso:picasso:2.4.0'
-    //    compile 'com.squareup.okhttp:okhttp-urlconnection:2.4.0'
     compile project(':ptr-lib')
-    //  compile project(':oneKeyShareNew')
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
     compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile files('libs/umeng_shareboard_widget.jar')
